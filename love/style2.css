@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+*::selection {
+    background: rgb(209, 160, 181);
+    color: #fff;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(209, 160, 181);
+    flex-direction: column;
+    margin: 0; /* Remove default body margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.wrapper {
+    position: absolute;
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 600px; /* Maximum width for larger screens */
+    height: auto; /* Adjust height to fit content */
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* Add padding to improve text readability */
+}
+i {
+    font-size: 7.5em;
+    color: #cc1ba6;
+    border: 5px solid transparent;
+    outline: 3px solid #00435f;
+    border-radius: 50%;
+}
+h2 {
+    font-size: 2em;
+    color: #cc1ba6;
+    margin: 15px 0;
+}
+.btn-group {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+button {
+    position: absolute;
+    width: 110px;
+    height: inherit;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid #590761;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+button:nth-child(1) {
+    margin-left: -185px;
+    background: #c96a92;
+}
+button:nth-child(2) {
+    margin-right: -185px;
+    color: #cc1ba6;
+}
+#videoContainer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+#jumpscareVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#exitFullscreen {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+#exitBtn {
+    background-color: rgb(106, 5, 5);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
